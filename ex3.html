@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+     <title>Formulaire</title>
+    </head>
+    <body>
+      <form action="http://www.iut-fbleau.fr/sitebp/post.php" method="post">
+          <label for="nom">Nom</label>
+            <input type="text" name="nom" required>  </br>
+          <label for="prenom">Prenom</label>
+            <input type="text" name="prenom" required>  </br>
+           <label for="date">Date de naissance</label>
+            <input type="date" name="date" required>  </br>
+          <label for="mail">Email</label>
+            <input type="email" name="mail" required>  </br>
+          <label for="code">Code Postal</label>
+            <input type="number" name="code" max ="99999" required>  </br>
+          <label for="portable">Telephone portable</label>
+            <input type="" pattern="0[67]\d{8}"name="portable" required>  </br>
+          <label for="sexe">Sexe</label>
+            <input type="radio" name="sexe" value="homme" checked> Homme  
+          <input type="radio" name="sexe" value="femme"> Femme </br>
+           <label for="semestre">Semestre</label>
+            <select name="semestre" size="1">
+              <option> S1
+              <option selected> S2
+              <option> S3
+              <option> S4
+          </select> </br>
+          <label for="level">Niveau en html</label>
+            <input type="range" name="level" min="0" max="10" step="1" required>  </br>
+          <label for="message">Message</label>
+            <input type="textarea" name="message" required>  </br>
+            <input type="reset">
+            <input type="submit" name="soumission" value="envoyer"/>
+      </form>
+    </body>
+</html>
